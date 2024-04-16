@@ -1,0 +1,46 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  cursor: default;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+/* header */
+.header-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.header-nav li {
+  list-style-type: none;
+}
+
+.header-logo {
+  max-width: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 40px 20px 40px;
+}
+
+/* cta section */
+#cta-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container{
+    display: flex;
+    gap: 20px;
+}
