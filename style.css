@@ -29,21 +29,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* 
-title: 
-font-family: "poppins", sans-serif;
-font-weight: 900;
-font-style: normal;
-
-font-family: "stolzl", sans-serif;
-font-weight: 700;
-font-style: normal;
-
-font-family: "stolzl", sans-serif;
-font-weight: 400;
-font-style: normal;
-
-*/
 
 body {
   cursor: default;
@@ -60,7 +45,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  scroll-margin-top: 90px;
+}
+#cta-home {
+  scroll-margin-top: 90px;
 }
 
 .hidden {
@@ -73,14 +61,21 @@ body {
 }
 
 main {
-  margin: auto 130px;
+  margin: auto 17vw;
 }
 
 a:hover {
   cursor: pointer;
   text-decoration: none;
 }
+
 /* header */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 17vw;
+}
+
 .header-nav {
   display: flex;
   gap: 15px;
@@ -91,6 +86,10 @@ a:hover {
   font-weight: var(--font-weight-bold);
   list-style-type: none;
   font-size: var(--sub-heading);
+}
+
+hr {
+  border-top: solid 3px var(--text-color);
 }
 
 h2 {
@@ -108,15 +107,17 @@ h3 {
   max-width: 50px;
 }
 
+.header-hr {
+  margin: 0 17vw;
+}
+
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
   background-color: var(--background-color);
   top: -5px;
   z-index: 1;
   position: sticky;
-  padding: 15px 130px;
 }
 
 /* cta section */
@@ -125,7 +126,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 87vh;
+  height: 90vh;
 }
 
 .button-container {
@@ -236,4 +237,35 @@ header {
   font-size: var(--sub-heading);
   padding: 10px;
   border-radius: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    margin: auto 7vw;
+  }
+  .about-text {
+    width: 300px;
+  }
+
+  .work-card {
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .skill-pill {
+    font-size: var(--body-text);
+    padding: 8px;
+    border-radius: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-text {
+    width: 300px;
+  }
+
+  .work-card {
+    flex-direction: column;
+    width: 300px;
+  }
 }
