@@ -6,35 +6,48 @@
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ufe8igf.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <script defer src="script.js"></script>
     <title>Katy Molloy | Web Developer</title>
   </head>
   <body>
     <header>
       <div class="header-top">
-      <a href="#cta-home"
-        ><img
-          src="./assets/logo.png"
-          alt="bright blue asterisk logo"
-          class="header-logo"
-        />
-      </a>
-      <ul class="header-nav">
-        <a href="#projects">
-          <li>WORK</li>
+        <a href="#cta-home"
+          ><img
+            src="./assets/logo.png"
+            alt="bright blue asterisk logo"
+            class="header-logo"
+          />
         </a>
-        <a href="#about">
-          <li>ABOUT</li>
-        </a>
-        <a href="#contact">
-          <li>CONTACT</li>
-        </a>
-      </ul>
-    </div>
-   <hr class="header-hr">
+        <ul class="header-nav">
+          <a href="#projects">
+            <li>WORK</li>
+          </a>
+          <a href="#about">
+            <li>ABOUT</li>
+          </a>
+          <a href="#contact">
+            <li>CONTACT</li>
+          </a>
+        </ul>
+
+        <div class="mobile-nav">
+          <i class="material-icons" style="font-size: 28px" onclick="openMenu()">menu</i>
+          <div id="nav-links">
+            <a href="#projects">WORK</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+      <hr class="header-hr" />
     </header>
     <main>
-      <div id="cta-home">
+      <section id="cta-home">
         <div class="cta-container">
           <div class="top-text-cta">Hey, my name is</div>
           <div class="big-text-cta">Katy Molloy</div>
@@ -46,11 +59,11 @@
           <a href="#projects"> <div class="cta-button">MY WORK</div></a>
           <a href="#contact"><div class="cta-button">GET IN TOUCH</div></a>
         </div>
-      </div>
+      </section>
 
       <hr />
 
-      <div id="projects">
+      <section id="projects">
         <h2>WORK</h2>
         <div class="card-container">
           <div class="work-card hidden">
@@ -66,6 +79,7 @@
                 Features include the ability to register, save recipes, and
                 search by diets.
               </div>
+              <div class="work-features">ReactJS, Sass, Firebase, Rest API</div>
               <div class="link-container">
                 <a
                   href="https://github.com/katymolloy/recipe-scout"
@@ -88,6 +102,7 @@
                 Audify is an album review social media platform created with
                 React and the Spotify API.
               </div>
+              <div class="work-features">ReactJS, Sass, Firebase, Rest API</div>
               <div class="link-container">
                 <a
                   href="https://github.com/katymolloy/audify"
@@ -131,16 +146,18 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <hr />
-      <div id="about">
+
+      <section id="about">
         <h2>ABOUT</h2>
         <div class="about-text">
           <p>
-            Hello! I'm a passionate full-stack web developer based in Ontario,
-            Canada. Recently graduated from Fanshawe College, I've acquired a
-            solid foundation in both front-end and back-end technologies,
-            allowing me to craft robust and user-friendly web applications.
+            Hello! My name is Katy and I'm a full-stack junior developer based in
+            Ontario, Canada. Recently graduated with honours from Fanshawe
+            College, I've acquired a solid foundation in both front-end and
+            back-end technologies, allowing me to craft robust and user-friendly
+            web applications.
           </p>
           <p>
             My journey into web development started with an interest in
@@ -157,44 +174,74 @@
           <p>
             I'm always eager to learn and adapt to new technologies, ensuring
             that I stay updated with the ever-evolving world of web development.
-            If you're interested in working together, please reach out.
+            If you're interested in working together, please feel free to contact me.
           </p>
-
-          <h2>Skills</h2>
+        </div>
+        <div class="about-links">
+          <i class="material-icons" style="font-size: 28px">download</i>
+          <a
+            href="./assets/katy_molloy_resume.pdf"
+            download="katy_molloy_resume"
+          >
+            Resume</a
+          >
+        </div>
+        <div class="about-divs">
+          <h3>Skills</h3>
           <div class="skill-container">
-            <div class="skill-pill">JavaScript</div>
-            <div class="skill-pill">HTML</div>
-            <div class="skill-pill">CSS</div>
-            <div class="skill-pill">Sass</div>
-            <div class="skill-pill">Node.js</div>
-            <div class="skill-pill">React</div>
-            <div class="skill-pill">Angular</div>
-            <div class="skill-pill">TypeScript</div>
-            <div class="skill-pill">JQuery</div>
-            <div class="skill-pill">Bootstrap</div>
-            <div class="skill-pill">Git</div>
-            <div class="skill-pill">CMS</div>
-            <div class="skill-pill">Wordpress</div>
-            <div class="skill-pill">Firebase</div>
-            <div class="skill-pill">SQL</div>
-            <div class="skill-pill">RWD</div>
+            <div class="skill-pill hiddenPill">HTML</div>
+            <div class="skill-pill hiddenPill">CSS</div>
+            <div class="skill-pill hiddenPill">Sass</div>
+            <div class="skill-pill hiddenPill">JavaScript</div>
+            <div class="skill-pill hiddenPill">TypeScript</div>
+            <div class="skill-pill hiddenPill">Node.js</div>
+            <div class="skill-pill hiddenPill">Express.js</div>
+            <div class="skill-pill hiddenPill">React</div>
+            <div class="skill-pill hiddenPill">Angular</div>
+            <div class="skill-pill hiddenPill">JQuery</div>
+            <div class="skill-pill hiddenPill">Bootstrap</div>
+            <div class="skill-pill hiddenPill">Git</div>
+            <div class="skill-pill hiddenPill">Responsive Web Design</div>
+            <div class="skill-pill hiddenPill">CMS</div>
+            <div class="skill-pill hiddenPill">Rest APIs</div>
+            <div class="skill-pill hiddenPill">Wordpress</div>
+            <div class="skill-pill hiddenPill">Firebase</div>
+            <div class="skill-pill hiddenPill">SQL</div>
+            <div class="skill-pill hiddenPill">NoSQL Databases</div>
+            <div class="skill-pill hiddenPill">SQL Databases</div>
           </div>
         </div>
-      </div>
+      </section>
+
       <hr />
-      <div id="contact">
+      <section id="contact">
         <h2>CONTACT</h2>
-        <div>
-          Interested in hiring me? Shoot me an email, or reach me at one
-          of the links below
+        <div class="contact-cta">
+          Interested in hiring me? Shoot me an email, or reach me at any one of
+          the links below.
         </div>
-        <a href="https://github.com/katymolloy"
-          ><div>Check out more of my work on GitHub</div></a
-        >
-      </div>
+        <div class="contact-container">
+          <a href="mailto:katymolloydev@gmail.com" class="about-links">
+            <i class="material-icons" style="font-size: 28px">mail</i>Email</a
+          >
+          <a href="https://www.linkedin.com/in/katy-molloy/" class="about-links"
+            ><i class="material-icons" style="font-size: 28px">person</i
+            >LinkedIn</a
+          >
+          <a href="https://github.com/katymolloy" class="about-links"
+            ><i class="material-icons" style="font-size: 28px">code</i>
+            <div>GitHub</div></a
+          >
+        </div>
+      </section>
+      <hr />
+      <footer>
+        <div class="center-icon">
+          <i class="material-icons" style="font-size: 22px">copyright</i>2024
+          All Rights Reserved
+        </div>
+        <div>Developed by Katy Molloy</div>
+      </footer>
     </main>
-    <footer>
-      <div>Developed by Katy Molloy</div>
-    </footer>
   </body>
 </html>
