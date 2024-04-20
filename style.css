@@ -136,6 +136,10 @@ header {
   display: none;
 }
 
+#nav-links{
+  display: none;
+}
+
 .header-nav li {
   font-family: var(--stozl-font);
   font-weight: var(--font-weight-bold);
@@ -381,16 +385,30 @@ footer {
 
   .mobile-nav {
     display: flex;
-  }
-  #nav-links a {
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: none;
+    flex-direction: column;
+    z-index: 5;
   }
 
+  #nav-links {
+    display: none; 
+    flex-direction: column;
+    left: 69%;
+    top: 7%;
+    position: fixed;
+    background-color: var(--background-color);
+    border: 1px solid #ccc; 
+    z-index: 4;    
+  }
+
+#nav-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
   footer div{
-    font-size: var(--body-text);
+    font-size: var(--ebody-text);
   
   }
 }

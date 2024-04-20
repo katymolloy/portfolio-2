@@ -17,11 +17,10 @@ const observer2 = new IntersectionObserver((entries) =>{
 
 const openMenu = () =>{
     let menuLinks = document.getElementById('nav-links');
-    console.log(menuLinks)
     if(menuLinks.style.display === 'none'){
-        menuLinks.style.display === 'block'
+        menuLinks.style.display = 'flex'
     }else{
-        menuLinks.style.display === 'none'
+        menuLinks.style.display = 'none'
     }
 }
 
