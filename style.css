@@ -136,7 +136,7 @@ header {
   display: none;
 }
 
-#nav-links{
+#nav-links {
   display: none;
 }
 
@@ -199,7 +199,7 @@ header {
   margin: 20px auto;
   display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -394,25 +394,24 @@ footer {
   }
 
   #nav-links {
-    display: none; 
+    display: none;
     flex-direction: column;
- left: 60%;
-    top: 7%;
+    right: var(--mobile-margin);
+    top: 8%;
     position: fixed;
     background-color: var(--background-color);
-    border: 1px solid #ccc; 
-    z-index: 4;    
+    border: 1px solid #ccc;
+    z-index: 4;
   }
 
-#nav-links a {
+  #nav-links a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #333;
-}
+  }
 
-  footer div{
+  footer div {
     font-size: var(--ebody-text);
-  
   }
 }

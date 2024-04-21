@@ -15,14 +15,22 @@ const observer2 = new IntersectionObserver((entries) =>{
     })
 })
 
+const menuLinks = document.getElementById('nav-links');
+
+
 const openMenu = () =>{
-    let menuLinks = document.getElementById('nav-links');
     if(menuLinks.style.display === 'none'){
         menuLinks.style.display = 'flex'
     }else{
         menuLinks.style.display = 'none'
     }
 }
+
+menuLinks.addEventListener('click', (e) => {
+    if(e.target.classList.contains('link')) {
+        openMenu();
+    }
+  });
 
 const hiddenCards = document.querySelectorAll('.hidden')
 hiddenCards.forEach((el) => observer1.observe(el))
