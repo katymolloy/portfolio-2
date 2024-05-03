@@ -217,7 +217,7 @@ header {
 
 .work-image {
   max-height: 300px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .work-card-text {
@@ -362,6 +362,10 @@ footer {
   .work-card {
     flex-direction: column;
     max-width: 66vw;
+  }
+
+  .work-image{
+    margin-top: 16px;
   }
 
   .work-desc,
