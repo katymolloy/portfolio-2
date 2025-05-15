@@ -27,7 +27,7 @@
   --mobile-margin: 10vw;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -43,7 +43,7 @@ main {
 a:hover {
   cursor: pointer;
   text-decoration: none;
-}
+} */
 
 body {
   cursor: default;
@@ -70,7 +70,7 @@ h3 {
   margin: 0;
 }
 
-#cta-home,
+/* #cta-home,
 #projects,
 #about,
 #contact {
@@ -79,10 +79,10 @@ h3 {
   justify-content: center;
   align-items: center;
   scroll-margin-top: 80px;
-}
+} */
 
 /* ////////////// animation */
-.hiddenPill {
+/* .hiddenPill {
   opacity: 0;
 }
 
@@ -107,10 +107,10 @@ h3 {
 
 .show {
   opacity: 1;
-}
+} */
 
 /* //////////////////////////////////////////////  header */
-
+/* 
 header {
   display: flex;
   flex-direction: column;
@@ -156,10 +156,10 @@ header {
 }
 
 /* //////////////////////////////////////////////  cta section */
-#cta-home {
+/* #cta-home {
   height: 90vh;
-}
-
+} */
+/* 
 .button-container {
   display: flex;
   gap: 20px;
@@ -178,7 +178,8 @@ header {
 .cta-button:hover {
   box-shadow: none;
   translate: 5px 5px;
-}
+} */
+
 .top-text-cta {
   font-size: var(--cta-secondary-text-desktop);
   color: rgba(0, 0, 0, 0.5);
@@ -196,15 +197,17 @@ header {
 }
 
 .cta-container {
-  margin: 20px auto;
+  margin: 10%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+ 
   gap: 10px;
 }
 
 /* //////////////////////////////////////////////  work section */
-.work-card {
+/* .work-card {
   background-color: var(--text-color);
   color: var(--background-color);
   display: flex;
@@ -332,7 +335,7 @@ footer {
 
 .contact-cta {
   margin-bottom: 31px;
-}
+} */
 
 /* //////////////////////////////////////////////  responsive */
 @media only screen and (max-width: 1300px) {
